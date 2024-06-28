@@ -1,22 +1,22 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models/weapons/c_models/c_ambassador/c_ambassador"
-	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"	
+	$baseTexture "models/weapons/c_models/c_ambassador/c_ambassador"
+	$bumpmap "models/weapons/c_models/c_ambassador/c_ambassador_normal"
 
-	"$phong" "1"	
-	"$phongexponentfactor"  "80"
-	"$lightwarptexture" "models/lightwarps/softened_weapon_lightwarp"	
-	"$phongfresnelranges"	"[.3 .5 3]"
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
-	
+
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
-	"$rimlightboost" "0.25"
-	"$rimmask" "1"
+	"$rimlightboost" ".25"
 
-	"$basemapalphaphongmask" "1"
 	"$normalmapalphaenvmapmask" 1
-	"$ambientocclusion" "1"
+	
 	"$glowcolor" "1"
 
 	// Cloaking

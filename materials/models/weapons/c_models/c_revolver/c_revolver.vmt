@@ -5,18 +5,16 @@
 	
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "5"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
-	"$phongfresnelranges"	"[.3 .5 3]"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
 
-	"$commadd_phongexponent" "40"
-	"$commadd_phongboost" 	"22.5"
-	"$commweapon"		"0"
-
 	"$basemapalphaphongmask" "1"
-	"$basephongexponent" "5"
-	"$basephongboost" "5"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
 
 	"$glowcolor" "1"
 
