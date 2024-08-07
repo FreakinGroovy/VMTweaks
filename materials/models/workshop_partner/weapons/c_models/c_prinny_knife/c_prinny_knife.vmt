@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/workshop_partner/weapons/c_models/c_prinny_knife/c_prinny_knife"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "5"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 3]"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"$yellow"		"0"
+
+	"proxies"
+	{
+		"invis"
+		{
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1"		"$color2"
+			"srcVar2"		"$yellow"
+			"resultVar"	"$color2"
+		}
+	}
+}

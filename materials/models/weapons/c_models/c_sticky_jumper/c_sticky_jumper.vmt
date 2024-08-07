@@ -3,21 +3,14 @@
 	"$baseTexture" "models/weapons/c_models/c_sticky_jumper/c_sticky_jumper"
 	
 	"$phong" "1"
-	"$phongboost" "1.5"	
-	"$phongalbedotint" "1"
-	"$phongexponentfactor"  "80"
-	"$lightwarptexture" "models/lightwarps/softened_weapon_lightwarp"	
-	"$phongfresnelranges"	"[.3 .5 3]"
+	"$phongexponent" "25"
+	"$phongboost" "4"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
-	
-	"$rimlight" "1"						
-	"$rimlightexponent" "20"				
-	"$rimlightboost" "0.25"
-	"$rimmask" "1"
 
 	"$basemapalphaphongmask" "1"
-	"$normalmapalphaenvmapmask" 1
-	"$ambientocclusion" "1"
+
 	"$glowcolor" "1"
 
 	// Cloaking

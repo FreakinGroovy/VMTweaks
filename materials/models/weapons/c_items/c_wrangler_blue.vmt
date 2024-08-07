@@ -10,20 +10,18 @@
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
-	"$normalmapalphaenvmapmask" 1
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"
 
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps\cubemap_sheen001"
 	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"

@@ -1,0 +1,42 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack"
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".3"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "2"
+
+	"$cloakPassEnabled" "1"
+	"$selfillum" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"Sine"
+		{
+			"sinemax" "1"
+			"sinemin" ".25"
+			"sineperiod" "2"
+			"resultvar" "$detailblendfactor"
+		}
+	}
+}

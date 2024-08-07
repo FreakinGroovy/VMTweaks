@@ -16,12 +16,6 @@
 
 	"$bumpmapalphaphongmask" "1"
 
-	"$bumpmap" "models/effects/flat_normal" 
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"
-	"$detailscale" "5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
-
 	"$glowcolor" "1"
 
 	// Cloaking
@@ -52,10 +46,6 @@
 			"animatedtexturevar" "$detail"
 			"animatedtextureframenumvar" "$detailframe"
 			"animatedtextureframerate" 30
-		}
-		"BurnLevel"
-		{
-			"resultVar" "$detailblendfactor"
 		}
 		"YellowLevel"
 		{

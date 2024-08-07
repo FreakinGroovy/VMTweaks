@@ -3,18 +3,17 @@
 	"$basetexture"	"models\weapons\w_rocketlauncher\w_rocket01"
 	
 	"$phong" "1"
-	"$phongexponent" "80"
-	"$phongboost" "1.5"	
-	"$lightwarptexture" "models\lightwarps\softened_weapon_lightwarp"
+	"$phongexponent" "25"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+	
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
-	"$rimlightboost" "0.25"
-	"$rimmask" "1"
+	"$rimlightboost" ".25"
 
-	// Cloaking
 	"$cloakPassEnabled" "1"
-	"$sheenPassEnabled" "1"
 }

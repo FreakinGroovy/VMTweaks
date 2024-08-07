@@ -1,0 +1,56 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle_gold"
+	"$phongexponenttexture" "models/weapons/c_models/c_sniperrifle/c_sniperrifle_exp"
+	"$basemapalphaphongmask" "1"
+
+	"$envmap" "cubemaps/cubemap_gold001"	
+	"$envmaptint" "[2.5 2.5 1.15]"
+
+	"$phong" "1"
+	"$phongexponenfactor" "40"
+	"$phongboost" "12"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
+
+	"$cloakPassEnabled" "1"
+	"$glowcolor" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+		"WeaponSkin" {}
+	}
+}

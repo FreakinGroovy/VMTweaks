@@ -1,42 +1,34 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_sydney_sleeper/c_sydney_sleeper_blue"
+	//"$bumpmap" "models/workshop/weapons/c_models/c_sydney_sleeper/c_sydney_sleeper_phongmask"
+	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "5"	
+	"$phongexponent" "40"
+	"$phongboost" "6"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
 
-	"$basemapalphaphongmask" "1"
-	"$basephongexponent" "25"
-	"$basephongboost" "5"
-
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{

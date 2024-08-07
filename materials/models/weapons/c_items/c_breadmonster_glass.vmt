@@ -1,0 +1,57 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/pyro/drg_pyro_bubbleHelmet"
+
+	"$phong" "1"
+	"$phongexponent" "65"
+	"$phongboost" "6"
+	"$phongfresnelranges" "[1 2 4]"
+	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "20"
+	"$rimlightboost" "2"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.2 .2 .2]"
+
+	//"$nocull" "1"
+	"$additive" "1"
+	"$glowcolor" "1"
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

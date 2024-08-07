@@ -1,11 +1,12 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_models/c_medigun/c_medigun"
-	"$phongexponenttexture" "models/weapons/c_models/c_medigun/c_medigun_exp"
-	
+	//"$phongexponenttexture" "models/weapons/c_models/c_medigun/c_medigun_exp"
+	"$basemapalphaphongmask" "1"
+
 	"$phong" "1"
 	"$phongexponent" "5"
-	"$phongboost" "5"
+	"$phongboost" "10"
 	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
@@ -13,40 +14,25 @@
 	"$rimlight" "2"					
 	"$rimlightexponent" "20"		
 	"$rimlightboost" ".25"
-	"$rimmask" "1"
 
-	"$commadd_phongexponent" "40"
-	"$commadd_phongboost" 	"22.5"
-	"$commweapon"		"0"
-
-	"$basemapalphaphongmask" "1"
-	"$basephongexponent" "5"
-	"$basephongboost" "5"
-
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{
@@ -72,8 +58,6 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-	
-	
-		//"WeaponSkin" {}
+		"WeaponSkin" {}
 	}
 }

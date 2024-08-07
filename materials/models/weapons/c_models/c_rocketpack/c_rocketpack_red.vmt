@@ -9,31 +9,19 @@
 	"$phongfresnelranges"	"[2 1 5]"
 	"$halflambert" "1"
 	
+	"$basemapalphaphongmask" "1"
+
 	"$rimlight" "1"						
 	"$rimlightexponent" "4"				
 	"$rimlightboost" "2"
 
-	"$basemapalphaphongmask" "1"
-
-	"$selfillum" "1"
-	"$selfillummask" "models/weapons/c_models/c_rocketpack/c_rocketpack_selfillum"
-
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
-		"invis"
-		{
-		}
-		"BurnLevel"
-		{
-			"resultVar" "$detailblendfactor"
-		}
+		"invis" {}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"

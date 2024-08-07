@@ -1,6 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/workshop/weapons/c_models/c_jag/c_jag"
+	"$basemapalphaphongmask" "1"
 	
 	"$phong" "1"
 	"$phongexponent" "15"
@@ -9,32 +10,28 @@
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
-	"$basemapalphaphongmask" "1"
+	"$rimlight" "1"
+	"$rimlightexponent" "20"
+	"$rimlightboost" ".25"
 
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{
@@ -60,6 +57,6 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		//"WeaponSkin" {}
+		"WeaponSkin" {}
 	}
 }

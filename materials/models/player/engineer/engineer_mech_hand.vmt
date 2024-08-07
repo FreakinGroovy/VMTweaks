@@ -4,15 +4,16 @@
 	"$bumpmap"     "models/player/engineer/engineer_mech_hand_phongmask"
 
 	"$phong" "1"
-	"$phongexponent" "15"
-	"$phongboost" "5"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
-	"$phongfresnelranges"	"[.3 .5 3]"
+	"$phongexponent" "20"
+	"$phongboost" ".3"	
+	"$lightwarptexture" "models/player/engineer/engineer_hands_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
 
-//	"$rimlight" "1"
+	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" "2"	
+	"$rimlightboost" "1"
+	"$rimmask" "1"
 
 	"$normalmapalphaphongmask" "1"
 

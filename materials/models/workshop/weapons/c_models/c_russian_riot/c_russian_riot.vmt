@@ -1,6 +1,7 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_russian_riot/c_russian_riot"
+	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
@@ -12,32 +13,24 @@
 	"$rimlightexponent" "10"	
 	"$rimlightboost" ".175"
 
-	"$basemapalphaphongmask" "1"
-
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{
@@ -63,6 +56,6 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		//"WeaponSkin" {}
+		"WeaponSkin" {}
 	}
 }
