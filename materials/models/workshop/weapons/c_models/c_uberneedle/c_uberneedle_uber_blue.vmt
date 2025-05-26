@@ -1,47 +1,33 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models/weapons/c_items/c_uberneedle"
+	"$basetexture" "models/workshop/weapons/c_models/c_uberneedle/c_uberneedle"
+	"$bumpmap" "models/effects/flat_normal"
 
-	"$phong" "0"
-	"$phongexponent" "50"
-	"$phongboost" "1"
-	"$phongfresnelranges" "[1 2 3]"
-	"$lightwarptexture" "models\lightwarps\jarate_lightwarp"
-	"$halflambert" "1"
-
-	"$rimlight" "1"						
-	"$rimlightexponent" "20"				
+	"$rimlight" "1"
+	"$rimlightexponent" "20"
 	"$rimlightboost" ".25"
 
-	"$basemapalphaphongmask" "1"
-
 	"$selfillum" "1"
-	"$selfillumtint" "[.2 .4 1]"
+	"$selfillumtint" "[0 0.5 1.2]"
 
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
-	"$sheenmap" 		"cubemaps\cubemap_sheen001"
-	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{

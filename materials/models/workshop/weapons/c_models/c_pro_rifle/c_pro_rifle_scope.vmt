@@ -1,7 +1,9 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_pro_rifle/c_pro_rifle"
+
 	"$basemapalphaphongmask" "1"
+	"$basealphaenvmapmask" "1"
 
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[.4 .4 .4]"	
@@ -11,7 +13,6 @@
 	"$phongboost" "10"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
-	"$halflambert" "1"
 
 	"$cloakPassEnabled" "1"
 	"$glowcolor" "1"
@@ -19,7 +20,6 @@
 
 	"Proxies"
 	{
-
 		"invis" {}
 		"ModelGlowColor"
 		{

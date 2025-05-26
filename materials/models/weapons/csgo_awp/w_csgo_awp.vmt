@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models/weapons/csgo_awp/w_csgo_awp"
+	"$basetexture" "models/weapons/csgo_awp/w_csgo_awp"
 	"$bumpmap" "models/weapons/csgo_awp/w_csgo_awp_normal"
 
 	"$phong" "1"

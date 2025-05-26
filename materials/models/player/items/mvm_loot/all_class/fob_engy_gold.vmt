@@ -1,0 +1,55 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/player/items/mvm_loot/all_class/fob_engy_gold"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "cubemaps/cubemap_gold001"	
+	"$envmaptint" "[3 3 1]"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "25"
+	"$phongtint" "[3 3 1]"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.2 1 4]"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask"	"1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"
+
+	"$cloakPassEnabled" "1"
+	"$glowcolor" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

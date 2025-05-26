@@ -1,14 +1,15 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/workshop_partner/weapons/c_models/c_dex_sniperrifle/c_dex_sniperrifle"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "40"
-	"$phongboost" "12"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongboost" "6"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"

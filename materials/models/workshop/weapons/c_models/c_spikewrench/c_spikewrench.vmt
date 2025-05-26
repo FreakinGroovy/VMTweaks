@@ -1,7 +1,6 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_spikewrench/c_spikewrench"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
@@ -10,6 +9,8 @@
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+	
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"

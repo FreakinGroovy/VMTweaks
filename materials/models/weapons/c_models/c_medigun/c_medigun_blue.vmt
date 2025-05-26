@@ -2,17 +2,18 @@
 {
 	"$basetexture"	"models/weapons/c_models/c_medigun/c_medigun_blue"
 	//"$phongexponenttexture" "models/weapons/c_models/c_medigun/c_medigun_exp"
-	"$basemapalphaphongmask" "1"
-
+	
 	"$phong" "1"
 	"$phongexponent" "5"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
-	"$rimlight" "2"					
-	"$rimlightexponent" "20"		
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "2"						
+	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"
@@ -28,6 +29,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -58,6 +60,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

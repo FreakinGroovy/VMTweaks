@@ -1,0 +1,67 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\c_items/c_frontierjustice_xmas"
+	
+	"$phong"	"1"
+	"$phongexponent"	"50"
+	"$phongboost" "5"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask" 1
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
+
+	"$selfillum" 1
+	"$selfIllumFresnel" "1"
+	"$selfIllumFresnelMinMaxExp" "[10 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"$glowcolor" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+		"Sine"
+		{
+			"sineperiod" "1"
+			"sinemin" ".8"
+			"sinemax" "1.1"
+			"resultVar" "$selfillumfresnelminmaxexp[1]"
+		}
+	}
+}

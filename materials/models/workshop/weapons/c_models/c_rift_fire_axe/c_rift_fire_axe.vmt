@@ -3,18 +3,19 @@
 	"$basetexture"	"models/workshop/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe"
 	"$bumpmap" "models/workshop/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe_normal"
 
-	"$selfillum" 1
-
-	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
-	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phong"	"1"
+	"$phongexponent"	"25"
+	"$phongboost" "5"
+	"$phongtint" "[1 0.7 0.3]"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
 	"$rimlightboost" "1"
+
+	"$selfillum" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"

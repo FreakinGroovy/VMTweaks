@@ -2,47 +2,57 @@
 {
 	"$basetexture" "models/workshop_partner/weapons/c_models/c_tw_eagle/c_tw_eagle"
 
+	"$envmap" "cubemaps/cubemap_gold001"	
+	"$envmaptint" "[3 3 1]"
+
 	"$phong" "1"
 	"$phongexponent" "60"
-	"$phongboost" "5"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
-	"$phongfresnelranges"	"[.2 1 4]"
+	"$phongboost" "20"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
-
-	"$rimlight" "2"					
-	"$rimlightexponent" "20"		
-	"$rimlightboost" ".25"
-
-	"$envmap" "cubemaps/cubemap_gold001"
-	"$envmaptint" "[1 .95 .3]"
 
 	"$basemapalphaphongmask"	"1"
 
-	"$glowcolor" "1"
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "2"
 
-	// Cloaking
 	"$cloakPassEnabled" "1"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
-		"invis"
-		{
-		}
+		"invis" {}
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
 			"animatedtextureframenumvar" "$detailframe"
 			"animatedtextureframerate" 30
 		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1" "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

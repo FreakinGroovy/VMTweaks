@@ -3,50 +3,31 @@
 	"$baseTexture" "models/workshop/player/items/demo/demo_booties/demo_booties"
 
 	"$phong" "1"
-	"$phongexponent" "10"
-	"$phongboost" "1"	
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
-	"$phongfresnelranges"	"[.3 1 8]"
+	"$phongexponent" "5"
+	"$phongboost" "5"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges" "[.3 .5 3]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"		
+	"$rimlightexponent" "4"				
 	"$rimlightboost" "2"
-
-	"$basemapalphaphongmask" 1
-
-	"$glowcolor" "1"
 
 	"$cloakPassEnabled" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
-		"invis"
-		{
-		}
-		"ModelGlowColor"
-		{
-			"resultVar" "$glowcolor"
-		}
-		"Equals"
-		{
-			"srcVar1"  "$glowcolor"
-			"resultVar" "$selfillumtint"
-		}
-		"Equals"
-		{
-			"srcVar1"  "$glowcolor"
-			"resultVar" "$color2"
-		}
+		"invis" {}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Multiply"
+		"Equals"
 		{
-			"srcVar1" "$color2"
-			"srcVar2" "$yellow"
+			"srcVar1" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

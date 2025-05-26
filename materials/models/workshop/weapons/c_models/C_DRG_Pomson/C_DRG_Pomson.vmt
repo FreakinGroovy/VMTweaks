@@ -1,18 +1,18 @@
 "VertexlitGeneric"
 {
 	"$basetexture"	"models/workshop/weapons/c_models/c_drg_pomson/c_drg_pomson"
-	"$basemapalphaphongmask" "1"
-
+	
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "12"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
-	//"$phongtint"		"[0.7 0.3 0.2]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+
 	"$rimlight" "1"
-	"$rimlightexponent" "10"
+	"$rimlightexponent" "10"	
 	"$rimlightboost" ".175"
 
 	"$cloakPassEnabled" "1"

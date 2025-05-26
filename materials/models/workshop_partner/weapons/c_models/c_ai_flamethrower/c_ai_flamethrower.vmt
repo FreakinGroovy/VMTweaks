@@ -1,17 +1,18 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop_partner/weapons/c_models/c_ai_flamethrower/c_ai_flamethrower"
-	"$basemapalphaphongmask" "1"
-
+	
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "20"
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"

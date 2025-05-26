@@ -4,15 +4,11 @@
 	"$bumpmap" "models/workshop/weapons/c_models/c_drg_manmelter/c_drg_manmelter_normal"
 	
 	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "10"	
+	"$phongexponent" "30"
+	"$phongboost" "15"	
 	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
-	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
-
-	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"

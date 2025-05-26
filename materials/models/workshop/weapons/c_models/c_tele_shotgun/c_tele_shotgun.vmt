@@ -1,20 +1,22 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun"
-	"$selfillummask" "models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun_illum"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "12"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
 
-	"$selfillum" "1"
+	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "10"	
 	"$rimlightboost" ".175"
+
+	"$selfillum" "1"
+	"$selfillummask" "models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun_illum"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -29,6 +31,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -59,6 +62,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

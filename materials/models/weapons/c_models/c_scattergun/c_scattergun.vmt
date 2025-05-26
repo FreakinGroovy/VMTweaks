@@ -1,18 +1,21 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_models/c_scattergun/c_scattergun"
-	"$basemapalphaphongmask" "1"
-
+	//"$phongexponenttexture" "models/weapons/c_models/c_scattergun/c_scattergun_exp"
+	
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.5 .5 3]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "20"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"			
+	"$rimlightexponent" "20"	
 	"$rimlightboost" ".25"
+	//"$rimmask" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -27,6 +30,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -57,6 +61,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

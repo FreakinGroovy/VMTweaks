@@ -1,15 +1,19 @@
 "VertexlitGeneric"
 {
 	"$basetexture"	"models/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator_blue"
-	"$bumpmap"	"models/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator_normal"
 
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "15"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongboost" "10"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[1.5 .5 3]"
-	"$phongtint"		"[0.3 0.6 0.8]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -23,12 +27,14 @@
 
 	"Proxies"
 	{
-		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
 		}
 		"ModelGlowColor"
 		{

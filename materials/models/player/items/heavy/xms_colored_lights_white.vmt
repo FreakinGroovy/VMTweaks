@@ -1,0 +1,57 @@
+//"unlitGeneric"
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/heavy/xms_coloredlights_white_anim"
+	"$phongexponenttexture" "models/player/items/heavy/xms_coloredlights_exponent"
+	"$bumpmap" "models/player/items/heavy/xms_colored_lights_normal"
+	
+	"$phong"	"1"
+	"$phongexponentfactor" "50"
+	"$phongboost" "5"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$halflambert" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" "1"
+
+	"$selfillum" 1
+	"$selfIllumFresnel" "1"
+	"$selfIllumFresnelMinMaxExp" "[10 1 1]"
+	
+	"$cloakPassEnabled" "1"
+	"$yellow" "0"
+
+
+	"Proxies"
+	{
+		"invis" {}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1" "$yellow"
+			"resultVar" "$color2"
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 1
+		}
+		"Sine"
+		{
+			"sineperiod" "1"
+			"sinemin" ".8"
+			"sinemax" "1.1"
+			"resultVar" "$selfillumfresnelminmaxexp[1]"
+		}
+	}
+}

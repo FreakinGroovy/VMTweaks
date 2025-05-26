@@ -1,0 +1,73 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\c_items/c_robo_sandwich"
+
+	"$envmap" "env_cubemap"
+	//"$envmaptint" "[.5 .5 .5]"
+
+	"$phong"	"1"
+	"$phongexponent"	"50"
+	"$phongboost"	"5"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask" 1
+	"$basealphaenvmapmask" "1" 
+
+	"$rimlight"	"1"
+	"$rimlightexponent"	"1"
+	"$rimlightboost" ".25"
+
+	"$selfillum" 1
+
+	"$cloakPassEnabled" "1"
+	"$glowcolor" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+		
+		Sine
+		{
+			"resultVar"	"$selfillumtint" 
+		        "sineperiod"	2
+			"sinemin"       0
+			"sinemax"	10
+		}
+
+		Sine
+		{
+			"resultVar"	"$envmaptint" 
+		        "sineperiod"	2
+			"sinemin"       0
+			"sinemax"	.35
+		}
+
+	}
+}

@@ -3,29 +3,25 @@
 	"$basetexture"	"models/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack_jar"
 	"$bumpmap"	"models/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack_phongmask_jar"
 
+	"$additive" "1"
+	"$nocull" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .2]"
+
 	"$phong" "1"
 	"$phongexponent" "65"
 	"$phongboost" "6"
-	"$phongfresnelranges" "[1 2 4]"
 	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
+	"$phongfresnelranges" "[1 2 4]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"		
-	"$rimlightexponent" "20"				
+	"$rimlight" "1"						
+	"$rimlightexponent" "4"				
 	"$rimlightboost" "2"
 
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.2 .2 .2]"
-
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "1.5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
-
-	"$additive" "1"
-	"$yellow" "0"
-
 	"$cloakPassEnabled" "1"
+	"$yellow" "0"
 
 	"Proxies"
 	{

@@ -1,18 +1,18 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher_gold"
-	"$phongexponenttexture" "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher_exp"
-	"$basemapalphaphongmask" "1"
 
 	"$envmap" "cubemaps/cubemap_gold001"	
-	"$envmaptint" "[2.5 2.5 1.15]"
+	"$envmaptint" "[3 3 1]"
 
 	"$phong" "1"
-	"$phongexponentfactor" "80"
-	"$phongboost" "4"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongexponent" "100"
+	"$phongboost" "2"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -57,6 +57,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

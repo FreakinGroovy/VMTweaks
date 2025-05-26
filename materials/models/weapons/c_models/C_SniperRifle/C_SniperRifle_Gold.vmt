@@ -1,20 +1,27 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle_gold"
-	"$phongexponenttexture" "models/weapons/c_models/c_sniperrifle/c_sniperrifle_exp"
-	"$basemapalphaphongmask" "1"
+	//"$phongexponenttexture" "models/weapons/c_models/c_sniperrifle/c_sniperrifle_exp"
 
 	"$envmap" "cubemaps/cubemap_gold001"	
-	"$envmaptint" "[2.5 2.5 1.15]"
+	"$envmaptint" "[3 3 1]"
 
 	"$phong" "1"
-	"$phongexponenfactor" "40"
-	"$phongboost" "12"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongexponent" "40"
+	"$phongboost" "6"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+
 	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
 	"$glowcolor" "1"
 	"$yellow" "0"
 
@@ -51,6 +58,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

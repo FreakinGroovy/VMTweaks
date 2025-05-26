@@ -1,25 +1,28 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_items/c_proto_medigun_blue"
-	"$bumpmap"	"models/weapons/c_items/c_proto_medigun_normal"
+
+	"$detail" "models/weapons/c_items/c_proto_medigun_blue"
+	"$detailblendmode" "0"
+	"$detailscale" "1"
 
 	"$phong" "1"
 	"$phongexponent" "5"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
 
-	"$selfillum" "1"
-
-	"$rimlight" "2"					
-	"$rimlightexponent" "20"		
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "2"						
+	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-	"$sheenmap" 		"cubemaps\cubemap_sheen001"
-	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"

@@ -2,14 +2,17 @@
 {
 	"$basetexture"	"models/workshop/weapons/c_models/c_drg_righteousbison/c_drg_righteousbison"
 	"$bumpmap" "models/workshop/weapons/c_models/c_drg_righteousbison/c_drg_righteousbison_normal"
-
+	
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
-	"$phongfresnelranges"	"[.25 .5 1]"
-	"$phongtint"		"[0.8 0.7 0.5]"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"

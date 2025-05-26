@@ -6,12 +6,12 @@
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "4"	
+	"$rimlightexponent" "4"
 	"$rimlightboost" "1"
 
 	"$cloakPassEnabled" "1"
@@ -21,7 +21,7 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-	"$glowcolor" "1"	
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"

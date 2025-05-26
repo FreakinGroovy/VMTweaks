@@ -1,14 +1,15 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/workshop_partner/weapons/c_models/c_canton/c_canton"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 	
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				

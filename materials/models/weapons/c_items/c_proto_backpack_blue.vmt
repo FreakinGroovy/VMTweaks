@@ -1,49 +1,43 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models\weapons\c_items\c_proto_backpack_blue"
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "2"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
 
 	"$phong" "1"
 	"$phongexponent" "20"
-	"$phongboost" ".3"	
+	"$phongboost" "3"
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" "2"
-
 	"$basemapalphaphongmask" "1"
 
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "2"
-	"$detailblendfactor" ".01"
-	"$detailblendmode" "6"
+	"$rimlight" "1"
+	"$rimlightexponent" ".014"
+	"$rimlightboost" "2"
 
-	"$selfillum" "1"
+	"$selfIllum" "1"
 
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
-	"$sheenmap" 		"cubemaps\cubemap_sheen001"
-	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"AnimatedTexture"
 		{
@@ -58,7 +52,7 @@
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
-		}		
+		}
 		"Equals"
 		{
 			"srcVar1"  "$yellow"

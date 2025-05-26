@@ -3,21 +3,21 @@
 	"$baseTexture" "models/workshop/player/items/demo/pegleg/pegleg"
 
 	"$phong" "1"
-	"$phongexponent" "20"
-	"$phongboost" ".3"	
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
-	"$phongfresnelranges"	"[.3 1 8]"
+	"$phongexponent" "25"
+	"$phongboost" "4"	
+	"$lightwarptexture" "models\lightwarps\softened_weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 5 1]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" "2"
+	"$basemapalphaphongmask" "1"
 
-	"$basemapalphaphongmask" 1
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "1"
 
 	"$glowcolor" "1"
-
 	"$cloakPassEnabled" "1"
+
 	"$yellow" "0"
 
 	"Proxies"

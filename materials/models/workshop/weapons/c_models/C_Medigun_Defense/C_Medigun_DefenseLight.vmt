@@ -3,18 +3,20 @@
 	"$baseTexture" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"	
 	"$detail" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"	
 	"$detailscale" "1"
-	"$detailblendfactor" 1
-	"$detailblendmode" 5
+	"$detailblendfactor" "1"
+	"$detailblendmode" "5"
 
 	"$phong" "1"
 	"$phongexponent" "5"
-	"$phongboost" "1"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
-	"$phongfresnelranges"	"[.3 .5 3]"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
 
-	"$rimlight" "2"					
-	"$rimlightexponent" "20"		
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "2"
+	"$rimlightexponent" "20"
 	"$rimlightboost" ".25"
 
 	"$cloakPassEnabled" "1"
@@ -35,6 +37,19 @@
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
 		}
+		"Sine"
+		{
+			"sinemax" "1"
+			"sinemin" ".25"
+			"sineperiod" "2"
+			"resultvar" "$detailblendfactor"
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
@@ -44,12 +59,8 @@
 			"srcVar1"  "$yellow"
 			"resultVar" "$color2"
 		}
-		"Sine"
-		{
-			"sinemax" "1"
-			"sinemin" ".25"
-			"sineperiod" "2"
-			"resultvar" "$detailblendfactor"
-		}
 	}
 }
+
+
+

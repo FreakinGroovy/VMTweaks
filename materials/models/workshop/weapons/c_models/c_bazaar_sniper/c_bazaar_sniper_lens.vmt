@@ -1,0 +1,16 @@
+"Refract"
+{
+	//"$normalmap"  "models/effects/flat_normal"
+	"$normalmap" "models/workshop/weapons/c_models/c_bazaar_sniper/c_bazaar_sniper_lens"
+ 
+	"$model" "1"
+	"$nodecal" "1"
+	"$bluramount" "0.5"
+ 	"$refractamount" "0.15"
+ 	"$nocull" "1"
+
+	<dx90
+	{
+		"$fallbackmaterial" "models/props_c17/fisheyelens_DX60"
+	}
+}

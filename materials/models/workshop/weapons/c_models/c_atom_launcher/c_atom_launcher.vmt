@@ -1,16 +1,16 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models\workshop\weapons\c_models\c_atom_launcher/c_atom_launcher"
-	"$basemapalphaphongmask" "1"
 	
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "5"	
+	"$phongtint" "[1 1.2 1]"
+	"$phongboost" "5"
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
-	"$halflambert" "1"
-
-	"$rimlight" "1"						
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
 
@@ -27,6 +27,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -57,6 +58,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

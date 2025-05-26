@@ -1,14 +1,15 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_lochnload/c_lochnload"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
-	"$phongexponent" "40"
+	"$phongexponent" "100"
 	"$phongboost" "2"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -23,6 +24,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -53,6 +55,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

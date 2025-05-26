@@ -3,40 +3,37 @@
 	"$baseTexture" "models/workshop/weapons/c_models/c_candy_cane/c_candy_cane_blue"
 
 	"$phong" "1"
-	"$phongexponent" "15"
-	"$phongboost" "5"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongexponent" "25"
+	"$phongboost" "5"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$phongwarptexture"  "models\weapons\v_bat\v_bat_phongwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+
 	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" "1"
+	"$rimlightexponent" "5"	
+	"$rimlightboost" "3"
 
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
-	"$sheenmap" 		"cubemaps/cubemap_sheen001"
-	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{

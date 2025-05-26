@@ -3,20 +3,19 @@
 	"$baseTexture" "models/weapons/c_models/c_rocketpack/c_rocketpack_red"
 
 	"$phong" "1"
-	"$phongexponent" "15"
+	"$phongexponent" "20"
 	"$phongboost" "1"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
-	"$phongfresnelranges"	"[2 1 5]"
+	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
-	
-	"$basemapalphaphongmask" "1"
 
-	"$rimlight" "1"						
-	"$rimlightexponent" "4"				
+	"$basemapalphaphongmask" 1
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
 	"$rimlightboost" "2"
 
 	"$cloakPassEnabled" "1"
-	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"

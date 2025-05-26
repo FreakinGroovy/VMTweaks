@@ -3,43 +3,37 @@
 	"$baseTexture" "models/workshop/weapons/c_models/c_invasion_wrangler/c_invasion_wrangler"
 
 	"$phong" "1"
-	"$phongexponent" "15"
-	"$phongboost" "5"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongexponent" "25"
+	"$phongtint" "[.7 .3 .2]"
+	"$phongboost" "10"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
-	"$phongtint" "[0.7 0.3 0.2]"
 	"$halflambert" "1"
 
-	// Rimlight needs to be enable for $phongtint to work
-	"$rimlight" "1"						
-
-	"$basealphaenvmapmask" "1"
 	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
 
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{

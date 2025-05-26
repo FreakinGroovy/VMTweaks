@@ -1,14 +1,15 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_rfa_hammer/c_rfa_hammer"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "10"
-	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongboost" "10"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" 1
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	

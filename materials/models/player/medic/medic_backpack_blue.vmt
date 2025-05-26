@@ -9,28 +9,24 @@
 	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" "2"
-
 	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "2"
 
 	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "2"
 	"$detailblendfactor" ".01"
 	"$detailblendmode" "6"
 
+	"$cloakPassEnabled" "1"
 	"$yellow" "0"
 
-	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
-		"spy_invis" //wmodel and team color cloak support
-		{
-		}
-		"invis" //vmodel cloak support
-		{
-		}
+		"spy_invis" {}
+		"invis" {}
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"

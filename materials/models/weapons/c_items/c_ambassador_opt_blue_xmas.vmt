@@ -1,0 +1,65 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/weapons/c_items/c_ambassador_opt_blue_xmas"
+	"$bumpmap" "models\weapons\c_items/c_ambassador_opt_xmas_normal"
+	
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "10"
+	"$lightwarptexture" "models/weapons/c_models/c_ambassador/c_ambassador_lightwarp"
+	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$halflambert" "1"
+
+	"$normalmapalphaenvmapmask" 1
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
+
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+	"$glowcolor" "1"
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"invis" {}
+		"WeaponSkin" {}
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

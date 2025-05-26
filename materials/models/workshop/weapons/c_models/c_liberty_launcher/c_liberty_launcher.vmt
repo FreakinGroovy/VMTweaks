@@ -1,16 +1,17 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_liberty_launcher/c_liberty_launcher"
-	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongexponent" "25"
-	"$phongboost" "5"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongboost" "5"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 .5 3]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 	
-	"$rimlight" "1"						
+	"$rimlight" "1"
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
 

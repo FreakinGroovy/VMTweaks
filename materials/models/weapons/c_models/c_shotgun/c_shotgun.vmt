@@ -2,19 +2,21 @@
 {
 	"$basetexture" "models/weapons/c_models/c_shotgun/c_shotgun"
 	//"$phongexponenttexture" "models/weapons/c_models/c_shotgun/c_shotgun_exp"
-	"$basemapalphaphongmask" "1"
-
+	
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "12"	
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "10"	
 	"$rimlightboost" ".175"
-
+	//"$rimmask" "1"
+	
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
@@ -28,6 +30,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -58,6 +61,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

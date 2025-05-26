@@ -1,17 +1,18 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_amputator/c_amputator"
-	"$basemapalphaphongmask" "1"
 
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[.5 .5 .5]"
+	"$envmaptint" "[.2 .2 .2]"
 
 	"$phong" "1"
 	"$phongexponent" "30"
-	"$phongboost" "10"
+	"$phongboost" "10"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges" "[0.25 0.5 1]"
 	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
@@ -19,8 +20,8 @@
 
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-	"$sheenmap" 		"cubemaps/cubemap_sheen001"
-	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
@@ -30,6 +31,7 @@
 	"Proxies"
 	{
 		"invis" {}
+		"WeaponSkin" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
@@ -60,6 +62,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }

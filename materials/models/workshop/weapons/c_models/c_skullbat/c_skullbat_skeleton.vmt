@@ -2,48 +2,43 @@
 {
 	"$baseTexture" "models/workshop/weapons/c_models/c_skullbat/c_skullbat_skeleton"
 
-	"$phong" "1"
-	"$phongexponent" "20"
-	"$phongboost" ".3"	
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
-	"$phongfresnelranges"	"[.3 1 8]"
-	"$halflambert" "1"
-
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" "2"	
-
+	"$basealphaenvmapmask" 1
 	"$envmap" "env_cubemap"
 	"$envmapcontrast" ".5"
 	"$envmaptint" " [.1 .1 .1]"
 
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "5"
+	"$phongtint" "[0.9 0.9 0.7]"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
+
 	"$basemapalphaphongmask" "1"
-	"$basealphaenvmapmask" 1
 
-	"$glowcolor" "1"
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"
 
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"
 	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
+	"$glowcolor" "1"
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"ModelGlowColor"
 		{

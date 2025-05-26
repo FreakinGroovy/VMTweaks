@@ -1,45 +1,38 @@
-"VertexLitGeneric"
+"VertexlitGeneric"
 {
-	"$baseTexture" "models\workshop\weapons\c_models\c_paratrooper_pack/c_paratrooper_pack_blu"
-    	"$bumpmap"              "models\workshop\weapons\c_models\c_paratrooper_pack/c_paratrooper_pack_normal"
+	"$baseTexture" "models/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack_blu"
 
 	"$phong" "1"
-	"$phongexponent" "20"
-	"$phongboost" ".3"	
+	"$phongexponent" "5"
+	"$phongboost" "5"
+	"$phongtint" "[1 1.2 1]"
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" "2"
+	"$rimlightboost" "1"
 
-	"$bumpmapalphaphongmask" "1"
-
-	"$glowcolor" "1"
-
-	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
-
-	"$sheenmap" 		"cubemaps/cubemap_sheen001"
-	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
-
 	"$yellow" "0"
 
 	"Proxies"
 	{
+		"invis" {}
 		"AnimatedWeaponSheen"
 		{
 			"animatedtexturevar" 		"$sheenmapmask"
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
-		}
-		"invis"
-		{
 		}
 		"AnimatedTexture"
 		{
@@ -56,8 +49,5 @@
 			"srcVar1"  "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
 }
-
-

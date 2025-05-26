@@ -1,17 +1,18 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_items/c_rainblower_blue"
-	"$basemapalphaphongmask" "1"
+	"$bumpmap" "models/weapons/c_items/c_rainblower_normal"
 
+	"$normalmapalphaenvmapmask" "1"
 	"$envmap" "effects/saxxy/saxxy_gold"
-	"$envmaptint" "[.5 .5 .25]"
+	"$envmaptint" "[.3 .3 .1]"
 
 	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "10"	
-	"$lightwarptexture" "models\lightwarps\rainblower_lightwarp"
+	"$phongexponent" "60"
+	"$phongboost" "10"
+	"$phongtint" "[1.2 1.2 0.5]"
+	"$lightwarptexture" "models/lightwarps/rainblower_lightwarp"
 	"$phongfresnelranges"	"[1.5 .5 3]"
-	"$phongtint"		"[1 1 0.5]"
 	"$halflambert" "1"
 
 	"$rimlight" "1"

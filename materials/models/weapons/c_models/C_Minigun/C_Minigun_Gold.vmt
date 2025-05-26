@@ -2,10 +2,9 @@
 {
 	"$basetexture" "models/weapons/c_models/c_minigun/c_minigun_gold"
 	//"$phongexponenttexture" "models/weapons/c_models/c_minigun/c_minigun_exp"
-	"$basemapalphaphongmask" "1"
 
 	"$envmap" "cubemaps/cubemap_gold001"	
-	"$envmaptint" "[2.5 2.5 1.15]"
+	"$envmaptint" "[3 3 1]"
 
 	"$phong" "1"
 	"$phongexponent" "25"
@@ -14,6 +13,8 @@
 	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
 
+	"$basemapalphaphongmask" "1"
+	
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
@@ -61,6 +62,5 @@
 			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-		"WeaponSkin" {}
 	}
 }
