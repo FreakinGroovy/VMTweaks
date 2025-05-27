@@ -1,0 +1,8 @@
+"Patch"
+{
+	"include"	"materials/models/player/soldier/soldier_red_zombie.vmt"
+	"insert"
+	{
+		"$basetexture" "models/player/soldier/soldier_blue_zombie"
+	}
+}

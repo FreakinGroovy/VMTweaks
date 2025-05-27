@@ -1,0 +1,8 @@
+"Patch"
+{
+	"include"	"materials/models/player/spy/spy_red_zombie.vmt"
+	"insert"
+	{
+		"$basetexture" "models/player/spy/spy_blue_zombie"
+	}
+}

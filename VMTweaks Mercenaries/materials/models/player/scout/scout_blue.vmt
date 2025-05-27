@@ -1,0 +1,8 @@
+"Patch"
+{
+	"include"	"materials/models/player/scout/scout_red.vmt"
+	"insert"
+	{
+		"$basetexture" "models/player/scout/scout_blue"
+	}
+}

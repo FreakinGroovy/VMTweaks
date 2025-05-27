@@ -1,0 +1,8 @@
+"Patch"
+{
+	"include"	"materials/models/player/demo/demoman_red_zombie_alphatest.vmt"
+	"insert"
+	{
+		"$basetexture" "models/player/demo/demoman_blue_zombie"
+	}
+}

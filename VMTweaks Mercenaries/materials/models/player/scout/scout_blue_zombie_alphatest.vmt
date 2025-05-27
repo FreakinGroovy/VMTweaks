@@ -1,0 +1,10 @@
+"Patch"
+{
+	"include"	"materials/models/player/scout/scout_red_zombie_alphatest.vmt"
+	"insert"
+	{
+		"$basetexture" "models/player/scout/scout_blue_zombie"
+	}
+}
+
+
